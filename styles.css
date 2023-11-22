@@ -2,15 +2,16 @@ div {
     display: flex;
     border-style: solid;
     border-color: black;
-    border-width: 1px;
+    border-width: 2px;
     margin: 0px;
 }
 
-.container{
-    max-width: 1200px;
+.container {
+    max-width: 1450px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .left {
     display: flex;
     flex: auto;
@@ -42,30 +43,62 @@ div {
 
 input {
     position: fixed;
-    width: 150px;
-    
+    width: 200px;
+
 }
 
-.form-container{
+.form-container {
     display: flex;
     flex-direction: column;
-    min-width: 500px;
-    max-width: 70%;
-    
+    min-width: 200px;
+    max-width: 100%;
+    padding: 5px;
 }
 
 label>* {
     position: relative;
 }
 
-.label{
+.label {
     margin: 3px;
+
 }
 
 .spacer {
-    flex: auto;
+    min-width: 30%;
+
 }
 
-form{
-    display: table;
+form {
+    display: flex;
+}
+
+.form-right,
+.form-left {
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 4px;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-three{
+    height: 70px;
+    align-items: center;
+}
+.create{
+    height: 40px;
+    width: 200px;
+    margin: 30px;
+    background-color: rgb(1, 85, 1);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.right-four{
+    padding-left: 30px;
 }
