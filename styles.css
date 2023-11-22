@@ -2,10 +2,15 @@ div {
     display: flex;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 1px;
     margin: 0px;
 }
 
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .left {
     display: flex;
     flex: auto;
@@ -30,11 +35,37 @@ div {
     text-wrap: wrap;
 }
 
-.right-two{
+.right-two {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-input{
-    width: 30%;
+input {
+    position: fixed;
+    width: 150px;
+    
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 70%;
+    
+}
+
+label>* {
+    position: relative;
+}
+
+.label{
+    margin: 3px;
+}
+
+.spacer {
+    flex: auto;
+}
+
+form{
+    display: table;
 }

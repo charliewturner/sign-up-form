@@ -18,14 +18,26 @@
 
             </div>
             <div class="right-two">
-                <form action="URL" method="get">
-                    <label for="forename">FIRST NAME<input type="text"></label>
-                    <label for="surname">LAST NAME<input type="text"></label>
-                    <label for="email">EMAIL<input type="email"></label>
-                    <label for="number">PHONE NUMBER<input type="tel"></label>
-                    <label for="pwd">PASSWORD<input type="text"></label>
-                    <label for="confirm-pwd">CONFIRM PASSWORD<input type="text"></label>
-                </form>
+                <div class="form-container">
+                    <form action="URL" method="get">
+                        <div class="form-left">
+                            <div class="label forename"><label for="forename">FIRST NAME<input type="text"></label></div>
+                            <div class="label email"><label for="email">EMAIL<input type="email"></label></div>
+                            <div class="label password"><label for="pwd">PASSWORD<input type="text"></label></div>
+                        </div>
+
+                        <div class="form-right">
+                            <div class="label surname"><label for="surname">LAST NAME<input type="text"></label></div>
+                            <div class="label number"> <label for="number">PHONE NUMBER<input type="tel"></label></div>
+                            <div class="label pwd"><label for="confirm-pwd">CONFIRM PASSWORD<input type="text"></label>
+                            </div>
+                        </div>
+
+
+
+                    </form>
+                </div>
+                <div class="spacer"></div>
             </div>
             <div class="right-three">
                 <button class="create">Create Account</button>
