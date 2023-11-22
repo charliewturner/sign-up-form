@@ -16,7 +16,6 @@ div {
     display: flex;
     flex: auto;
     height: 100vh;
-
 }
 
 .right {
@@ -32,8 +31,13 @@ div {
 }
 
 .right-one {
-    display: inline-block;
+    display: flex;
     text-wrap: wrap;
+    align-items: flex-end;
+}
+
+p {
+    padding: 20px;
 }
 
 .right-two {
@@ -42,16 +46,14 @@ div {
 }
 
 input {
-    position: fixed;
-    width: 200px;
-
+    width: 100%;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
     min-width: 200px;
-    max-width: 100%;
+    max-width: 600px;
     padding: 5px;
 }
 
@@ -60,13 +62,12 @@ label>* {
 }
 
 .label {
+    flex: auto;
     margin: 3px;
-
 }
 
 .spacer {
-    min-width: 30%;
-
+    width: clamp(30%, 0px);
 }
 
 form {
@@ -85,20 +86,21 @@ form {
     flex-direction: row;
 }
 
-.right-three{
+.right-three {
     height: 70px;
     align-items: center;
 }
-.create{
+
+.create {
     height: 40px;
     width: 200px;
     margin: 30px;
-    background-color: rgb(1, 85, 1);
+    background-color: #596D48;
     color: white;
     font-weight: bold;
     border-radius: 6px;
 }
 
-.right-four{
+.right-four {
     padding-left: 30px;
 }
