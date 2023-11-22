@@ -1,0 +1,20 @@
+div{
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin: 0px;
+}
+
+.left{
+    display: flex;
+    flex: auto;
+    height: 100vh;
+
+}
+
+.right{
+    display: flex;
+    width: 65%;
+    height: 100vh;
+}
