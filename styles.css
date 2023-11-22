@@ -15,6 +15,17 @@ div{
 
 .right{
     display: flex;
-    width: 65%;
+    flex-direction: column;
+    width: 60%;
     height: 100vh;
+}
+
+.right > *{
+    display: flex;
+    height: 25vh;
+}
+
+.right-one{
+    display: inline-block;
+    text-wrap: wrap;
 }
