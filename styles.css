@@ -1,4 +1,4 @@
-div{
+div {
     display: flex;
     border-style: solid;
     border-color: black;
@@ -6,26 +6,35 @@ div{
     margin: 0px;
 }
 
-.left{
+.left {
     display: flex;
     flex: auto;
     height: 100vh;
 
 }
 
-.right{
+.right {
     display: flex;
     flex-direction: column;
     width: 60%;
     height: 100vh;
 }
 
-.right > *{
+.right>* {
     display: flex;
     height: 25vh;
 }
 
-.right-one{
+.right-one {
     display: inline-block;
     text-wrap: wrap;
+}
+
+.right-two{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    width: 30%;
 }
