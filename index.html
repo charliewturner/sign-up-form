@@ -27,34 +27,47 @@
             <div class="right-two">
                 <div class="form-container">
                     <div class="form-title">Let's do this!</div>
-                    <form method="get" id="form1">
+                    <form method="get" id="form1" name="form1" action="#">
                         <div class="form-left">
                             <div class="label forename"><label for="forename">FIRST NAME<br><input type="text"></label>
                             </div>
                             <div class="label email"><label for="email">EMAIL<br><input type="email"></label></div>
-                            <div class="label password"><label for="pwd">PASSWORD<br><input type="text"></label></div>
+                            <div class="label password"><label for="pwd">PASSWORD<br><input class="pwd1"
+                                        type="text"></label></div>
                         </div>
 
                         <div class="form-right">
                             <div class="label surname"><label for="surname">LAST NAME<br><input type="text"></label>
                             </div>
-                            <div class="label number"> <label for="number">PHONE NUMBER<br><input type="tel"></label>
+                            <div class="label number"> <label for="number">PHONE NUMBER<br><input type="tel"
+                                        pattern="[0-9]{9}"></label>
                             </div>
-                            <div class="label pwd"><label for="confirm-pwd">CONFIRM PASSWORD<br><input
-                                        type="text"></label></div>
+                            <div class="label pwd"><label for="confirm-pwd" name="pwd">CONFIRM PASSWORD<br><input
+                                        type="text" class="pwd2"></label></div>
                         </div>
                     </form>
                 </div>
                 <div class="spacer"></div>
             </div>
             <div class="right-three">
-                <button class="create" type="submit" form="form1">Create Account</button>
+                <button class="create" type="submit" onclick="matchPassword()">Create Account</button>
             </div>
             <div class="right-four">
                 Already have an account? Log in
             </div>
         </div>
     </div>
+    <script>
+        function matchPassword() {
+            let pw1 = document.getElementsByClassName("pwd1");
+            let pw2 = document.getElementByClassName("pwd2");
+            if (pw1 != pw2) {
+                alert("Passwords did not match");
+            } else {
+                alert("Password created successfully");
+            }
+        }  
+    </script>
 </body>
 
 </html>

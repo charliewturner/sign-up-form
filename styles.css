@@ -90,6 +90,7 @@ p {
     box-shadow: 0px 4px #cccccc34;
     padding-top: 20px;
     padding-bottom: 20px;
+    max-height: 200px;
 }
 
 input {
@@ -101,13 +102,13 @@ input {
     border-width: 1px;
 }
 
-input:focus{
+input:focus {
     outline: none !important;
     border-color: 4px solid #4a67b8;
     box-shadow: 0 0 5px #498acf;
 }
 
-input:invalid{
+input:invalid {
     outline: none !important;
     border-color: 2px solid #f30404;
     box-shadow: 0 0 5px #ff0606;
@@ -187,6 +188,10 @@ form {
     border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
     border: none;
+}
+
+.create:active {
+    background-color: #2b3523;
 }
 
 .right-four {
