@@ -5,12 +5,11 @@
  *{
     font-family: Arial, Helvetica, sans-serif;
  }
+
 div {
     display: flex;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
     margin: 0px;
+    background-color: #cccccc09;
 }
 
 .container {
@@ -46,6 +45,7 @@ div {
     align-items: flex-end;
     margin-top: 150px;
     font-weight: 900;
+    margin-left: 20px;
 }
 
 p {
@@ -56,6 +56,8 @@ p {
 .right-two {
     display: flex;
     flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 2px #cccccc;
 }
 
 input {
@@ -63,7 +65,7 @@ input {
 }
 
 .form-title{
-    font-weight: 600;
+    font-weight: 580;
     font-size: large;
     padding-left: 8px;
 }
@@ -73,8 +75,15 @@ input {
     min-width: 200px;
     max-width: 600px;
     padding: 5px;
+    background-color: white;
+    margin-left: 28px;
+    
 }
-
+.form-container >* {
+    background-color: white;
+   
+    
+}
 label>* {
     position: relative;
 }
@@ -82,14 +91,20 @@ label>* {
 .label {
     flex: auto;
     margin: 3px;
+    font-size: x-small;
+    background-color: white; 
+    letter-spacing: 2px;
+  
 }
 
 .spacer {
     width: clamp(30%, 0px);
+    background-color: white;
 }
 
 form {
     display: flex;
+    
 }
 
 .form-right,
@@ -97,6 +112,7 @@ form {
     width: 50%;
     flex-wrap: wrap;
     margin: 4px;
+    background-color: white;
 }
 
 .form-left {
@@ -107,6 +123,7 @@ form {
 .right-three {
     height: 70px;
     align-items: center;
+    padding: 8px;
 }
 
 .create {
@@ -117,8 +134,10 @@ form {
     color: white;
     font-weight: bold;
     border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,0.19);
+    border: none;
 }
 
 .right-four {
-    padding-left: 30px;
+    padding-left: 38px;
 }
