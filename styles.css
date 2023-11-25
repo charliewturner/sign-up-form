@@ -23,8 +23,15 @@ div {
     flex: auto;
     height: 100vh;
     background-image: url("background.avif");
-    background-color: #cccccc;
+    background-color: #000000;
     background-size: cover;
+}
+
+.logo-container{
+    height: 120px;
+    background-color: rgba(2, 1, 1, 0.39);
+    flex: auto;
+    margin-top: 200px;
 }
 
 .right {
@@ -62,12 +69,14 @@ p {
 
 input {
     width: 100%;
+    margin-top: 4px;
 }
 
 .form-title{
     font-weight: 580;
     font-size: large;
-    padding-left: 8px;
+    padding-left: 6px;
+    margin-bottom: 14px;
 }
 .form-container {
     display: flex;
@@ -92,6 +101,7 @@ label>* {
     flex: auto;
     margin: 3px;
     font-size: x-small;
+    font-weight: 600;
     background-color: white; 
     letter-spacing: 2px;
   
